@@ -1,0 +1,22 @@
+{
+  "name": "first-app",
+  "version": "0.0.1",
+  "description": "Experiments in Electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "start": "node_modules/electron/dist/electron build/bundle.js"
+  },
+  "author": "demonburrito@gmail.com",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "electron": "^1.7.6",
+    "rollup-plugin-babel": "^3.0.2"
+  }
+}
