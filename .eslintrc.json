@@ -1,0 +1,22 @@
+{
+  "env": {
+    "es6": true
+  },
+  "plugins": [
+    "eslint-plugin-babel",
+    "eslint-plugin-no-loops",
+    "eslint-plugin-react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "es6": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error", "always", {
+      "omitLastInOneLineBlock": true
+    }]
+  }
+}

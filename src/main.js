@@ -5,15 +5,17 @@ import {
 import path from 'path';
 import url from 'url';
 
+const BUILDPATH = path.resolve(__dirname, '../build');
+
 let win;
 
 const createWindow = () => {
   win = new BrowserWindow({
-    width: 800, height: 600
+    fullscreen: true
   });
 
   win.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: `${BUILDPATH}/index.html`,
     protocol: 'file:',
     slashes: true
   }));
