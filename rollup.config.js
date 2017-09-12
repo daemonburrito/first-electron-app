@@ -6,7 +6,7 @@ import globals from 'rollup-plugin-node-globals';
 
 
 export default [{
-  input: 'src/main.js',
+  input: 'src/main/main.js',
   output: {
     file: 'build/electron-app.js',
     format: 'cjs'
@@ -39,15 +39,15 @@ export default [{
       ]
     }),
     commonjs({
-      include: ['node_modules/**'],
-      // include: [
-      //   'node_modules/create-react-class/**',
-      //   'node_modules/fbjs/**',
-      //   'node_modules/object-assign/**',
-      //   'node_modules/react/**',
-      //   'node_modules/react-dom/**',
-      //   'node_modules/prop-types/**'
-      // ],
+      // include: ['node_modules/**'],
+      include: [
+        'node_modules/create-react-class/**',
+        'node_modules/fbjs/**',
+        'node_modules/object-assign/**',
+        'node_modules/react/**',
+        'node_modules/react-dom/**',
+        'node_modules/prop-types/**'
+      ],
       // namedExports: {
       //   'react-dom': ['render']
       // }

@@ -4,7 +4,12 @@
     "react",
     "stage-0"
   ],
-  "plugins": ["external-helpers"],
+  "plugins": [
+    "external-helpers",
+    ["module-resolver", {
+      "root": ["./src"]
+    }]
+  ],
   "env": {
     "development": {}
   }
